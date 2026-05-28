@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Fluxora Digital - Premium Dark-Themed Web Agency led by engineering students from NIT Rourkela and PMEC Berhampur. Delivering high-performance websites, UI/UX, and SEO.">
+  <meta name="keywords"
+    content="Web Agency, NIT Rourkela, PMEC Berhampur, Odisha Web Design, Premium Websites, Dark Theme, React Developer, Next.js, SEO Odisha">
+  <title>Fluxora Digital | Premium Web Development Agency in Odisha</title>
+
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Sora:wght@400;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.png?v=4">
+  <link rel="icon" type="image/png" sizes="192x192" href="favicon.png?v=4">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg?v=4">
+  <link rel="apple-touch-icon" href="favicon.png?v=4">
+
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+  <!-- FLOATING BACKGROUND BLOBS -->
+  <div class="bg-blobs">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+  </div>
+
+  <!-- MOBILE OVERLAY -->
+  <div class="nav-overlay" id="navOverlay"></div>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="#home" class="nav-logo">
+        <span class="nav-logo-text">FLUXORA<span class="dot">.</span></span>
+        <span class="nav-logo-subtitle">LED BY STUDENTS OF NIT ROURKELA & PMEC Berhampur</span>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#process">Process</a></li>
+        <li><a href="#contact" class="btn btn-primary nav-cta" aria-label="Let's Talk">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+            </svg>
+          </a></li>
+        <li><a
+            href="https://wa.me/917788992183?text=Hi!%20I'd%20like%20to%20discuss%20a%20project%20with%20Fluxora%20Digital."
+            target="_blank" rel="noopener noreferrer" class="btn btn-green nav-cta" aria-label="WhatsApp">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path
+                d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z">
+              </path>
+            </svg>
+          </a></li>
+      </ul>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero" id="home">
+    <div class="hero-grid"></div>
+    <div class="container">
+      <div class="hero-content fade-up">
+        <div class="hero-badge">
+          <span class="pulse-dot"></span>
+          WEB DEVELOPMENT AGENCY IN ODISHA
+        </div>
+        <h1 class="hero-heading">
+          Premium Web Experiences for <span class="highlight">Forward-Thinking</span> Brands
+        </h1>
+        <p class="hero-subtext">
+          We are Fluxora Digital. Led by elite engineering minds from NIT Rourkela and PMEC Berhampur, we craft
+          ultra-performance websites, custom web applications, and stunning digital identities that scale your business.
+        </p>
+        <div class="hero-buttons">
+          <a href="#contact" class="btn btn-primary">
+            Start Your Project
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+              stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+          <a href="#work" class="btn btn-outline">View Our Work</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WORK / PORTFOLIO SECTION ===== -->
+  <section class="work" id="work">
+    <div class="container">
+      <div class="section-header fade-up">
+        <div class="section-label">Featured Projects</div>
+        <h2 class="section-heading">Our Latest <span class="highlight-orange">Masterpieces</span></h2>
+        <p class="section-subtext">Explore the digital products we've custom-designed and engineered to drive user
+          action and deliver flawless utility.</p>
+      </div>
+
+      <div class="work-grid" id="workGrid">
+        <!-- Rendered dynamically via JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES SECTION ===== -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-header fade-up">
+        <div class="section-label">Our Capabilities</div>
+        <h2 class="section-heading">Solutions We <span class="highlight-cyan">Excel</span> In</h2>
+        <p class="section-subtext">Combining strict engineering principles with clean digital art, we build web products
+          that set new industry standards.</p>
+      </div>
+
+      <div class="services-grid">
+        <!-- Service 1 -->
+        <div class="service-card fade-up fade-up-delay-1">
+          <div class="service-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="16 18 22 12 16 6"></polyline>
+              <polyline points="8 6 2 12 8 18"></polyline>
+            </svg>
+          </div>
+          <h3 class="service-title">Custom Web Apps</h3>
+          <p class="service-desc">Highly interactive, blazing-fast web applications built on React, Next.js, and
+            Node.js. Tailored to complex business logic with immaculate architecture.</p>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="service-card fade-up fade-up-delay-2">
+          <div class="service-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path
+                d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z">
+              </path>
+              <path d="M12 2V22"></path>
+              <path d="M12 12H22"></path>
+              <path d="M12 12L19.07 4.92999"></path>
+              <path d="M12 12L4.93005 4.92999"></path>
+            </svg>
+          </div>
+          <h3 class="service-title">UI/UX Brand Design</h3>
+          <p class="service-desc">Bespoke layouts, premium dark interfaces, and micro-animations that keep users hooked.
+            We create high-fidelity responsive systems for maximum engagement.</p>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="service-card fade-up fade-up-delay-3">
+          <div class="service-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="12 2 2 7 12 12 22 7 12 2 12 2"></polygon>
+              <polyline points="2 17 12 22 22 17"></polyline>
+              <polyline points="2 12 12 17 22 12"></polyline>
+            </svg>
+          </div>
+          <h3 class="service-title">SEO & Performance</h3>
+          <p class="service-desc">100/100 PageSpeed optimization. We build lightweight bundles, implement SSR/SSG, and
+            configure search engine schemas to maximize organic rankings.</p>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="service-card fade-up fade-up-delay-1">
+          <div class="service-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="9" cy="21" r="1"></circle>
+              <circle cx="20" cy="21" r="1"></circle>
+              <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+            </svg>
+          </div>
+          <h3 class="service-title">Headless E-Commerce</h3>
+          <p class="service-desc">Blazing-fast online storefronts using headless Shopify, BigCommerce, or WooCommerce.
+            Scalable checkout flows and smooth cart interactions.</p>
+        </div>
+
+        <!-- Service 5 -->
+        <div class="service-card fade-up fade-up-delay-2">
+          <div class="service-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+              <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+              <line x1="6" y1="6" x2="6.01" y2="6"></line>
+              <line x1="6" y1="18" x2="6.01" y2="18"></line>
+            </svg>
+          </div>
+          <h3 class="service-title">Cloud Integrations</h3>
+          <p class="service-desc">Robust backend APIs, database configurations, and secure user auth integrations.
+            Supported by reliable cloud host environments (AWS, Vercel, Supabase).</p>
+        </div>
+
+        <!-- Service 6 -->
+        <div class="service-card fade-up fade-up-delay-3">
+          <div class="service-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            </svg>
+          </div>
+          <h3 class="service-title">Bespoke Support</h3>
+          <p class="service-desc">Constant support and code health audits. We guarantee complete digital stability, zero
+            downtime, and real-time updates as your brand evolves.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PRICING SECTION ===== -->
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <div class="section-header fade-up">
+        <div class="section-label">Transparent Rates</div>
+        <h2 class="section-heading">Plans Built for <span class="highlight-orange">Scale</span></h2>
+        <p class="section-subtext">No hidden fees, no unnecessary overheads. Get direct access to premium engineering
+          talent tailored exactly to your budget.</p>
+      </div>
+
+      <div class="pricing-grid">
+        <!-- Starter Plan -->
+        <div class="pricing-card fade-up fade-up-delay-1">
+          <div class="pricing-plan-name">Starter Pack</div>
+          <div class="pricing-price">
+            <span class="currency">₹</span>7,999
+          </div>
+          <div class="pricing-period">Bespoke Single-Page Landing</div>
+          <div class="pricing-divider"></div>
+          <div class="pricing-features">
+            <div class="pricing-feature">
+              <span class="check-icon">✓</span>
+              1 High-Converting Sectioned Page
+            </div>
+            <div class="pricing-feature">
+              <span class="check-icon">✓</span>
+              Premium Dark / Light Aesthetics
+            </div>
+            <div class="pricing-feature">
+              <span class="check-icon">✓</span>
+              Mobile Responsive UI
+            </div>
+            <div class="pricing-feature">
+              <span class="check-icon">✓</span>
+              Core SEO Configuration
+            </div>
+            <div class="pricing-feature">
+              <span class="check-icon">✓</span>
+              1 Month Technical Support
+            </div>
+          </div>
+          <a href="#contact" class="btn btn-outline">Choose Starter</a>
+        </div>
+
+        <!-- Growth Plan (Popular) -->
+        <div class="pricing-card popular fade-up fade-up-delay-2">
+          <div class="pricing-badge">Most Popular</div>
+          <div class="pricing-plan-name">Growth Suite</div>
+          <div class="pricing-price">
+            <span class="currency">₹</span>10,999
+          </div>
+          <div class="pricing-period">Complete Premium Website</div>
+          <div class="pricing-divider"></div>
+          <div class="pricing-features">
+            <div class="pricing-feature">
+              <span class="check-icon">✓</span>
+              Up to 5 Pages custom layout
+            </div>
+            <div class="pricing-feature">
+              <span class="check-icon">✓</span>
+              Immersive UI/UX Micro-animations
+            </div>
+            <div class="pricing-feature">
+              <span class="check-icon">✓</span>
+              Advanced SEO & Speed Auditing
+            </div>
+            <div class="pricing-feature">
+              <span class="check-icon">✓</span>
+              Content Management (CMS)
+            </div>
+            <div class="pricing-feature">
+              <span class="check-icon">✓</span>
+              Contact Forms & Supabase DB Setup
+            </div>
+            <div class="pricing-feature">
+              <span class="check-icon">✓</span>
+              3 Months Dedicated Support
+            </div>
+          </div>
+          <a href="#contact" class="btn btn-primary">Choose Growth</a>
+        </div>
+
+        <!-- Enterprise Plan -->
+        <div class="pricing-card fade-up fade-up-delay-3">
+          <div class="pricing-plan-name">Elite Platform</div>
+          <div class="pricing-price">
+            <span class="currency">₹</span>15,999
+          </div>
+          <div class="pricing-period">Dynamic Web App & Systems</div>
+          <div class="pricing-divider"></div>
+          <div class="pricing-features">
+            <div class="pricing-feature">
+              <span class="check-icon">✓</span>
+              Unlimited Custom Pages
+            </div>
+            <div class="pricing-feature">
+              <span class="check-icon">✓</span>
+              Next.js & React Native Ecosystems
+            </div>
+            <div class="pricing-feature">
+              <span class="check-icon">✓</span>
+              Complex User Dashboard & Portal
+            </div>
+            <div class="pricing-feature">
+              <span class="check-icon">✓</span>
+              Custom E-commerce / Headless API
+            </div>
+            <div class="pricing-feature">
+              <span class="check-icon">✓</span>
+              Maximum Security & Encryptions
+            </div>
+            <div class="pricing-feature">
+              <span class="check-icon">✓</span>
+              6 Months Dedicated Tech Support
+            </div>
+          </div>
+          <a href="#contact" class="btn btn-outline">Choose Elite</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROCESS SECTION ===== -->
+  <section class="process" id="process">
+    <div class="container">
+      <div class="section-header fade-up">
+        <div class="section-label">Our Workflow</div>
+        <h2 class="section-heading">Built to <span class="highlight-cyan">Perfection</span></h2>
+        <p class="section-subtext">Our structured development cycle ensures transparent communication and delivery of
+          products that exceed expectations.</p>
+      </div>
+
+      <div class="process-timeline">
+        <!-- Step 1 -->
+        <div class="process-step fade-up">
+          <div class="process-node">01</div>
+          <div class="process-card">
+            <h3 class="process-card-title">Discovery & Strategy</h3>
+            <p class="process-card-desc">We deep-dive into your requirements, establish target personas, structure
+              initial wireframes, and draft a detailed project plan to align on the technical scope.</p>
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="process-step fade-up">
+          <div class="process-node">02</div>
+          <div class="process-card">
+            <h3 class="process-card-title">Visual UI/UX Design</h3>
+            <p class="process-card-desc">We shape your digital look and feel, delivering bespoke visual systems,
+              immersive dark layouts, high-fidelity mockups, and typography structures in Figma.</p>
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="process-step fade-up">
+          <div class="process-node">03</div>
+          <div class="process-card">
+            <h3 class="process-card-title">Engineering & Integration</h3>
+            <p class="process-card-desc">Our NIT & PMEC developers construct clean, high-performance HTML/CSS/JS or
+              React/Next.js systems, ensuring lightning load times and standard security protocols.</p>
+          </div>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="process-step fade-up">
+          <div class="process-node">04</div>
+          <div class="process-card">
+            <h3 class="process-card-title">Testing & Fluid Deployment</h3>
+            <p class="process-card-desc">We thoroughly audit load speeds across devices, optimize user accessibility
+              standards, fix potential edge cases, and launch the site smoothly onto staging or live domains.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA / CONTACT SECTION ===== -->
+  <section class="cta" id="contact">
+    <div class="container">
+      <div class="fade-up">
+        <h2 class="cta-heading">Ready to Create Something <span class="highlight-orange">Legendary?</span></h2>
+        <p class="cta-sub">Let's craft an ultra-fast, premium digital system that translates your ideas into business
+          success.</p>
+        <div class="cta-buttons">
+          <a href="#contact" class="btn btn-primary">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+            </svg>
+            Let's Talk
+          </a>
+          <a href="https://wa.me/917788992183?text=Hi!%20I'd%20like%20to%20discuss%20a%20project%20with%20Fluxora%20Digital."
+            target="_blank" rel="noopener noreferrer" class="btn btn-green">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path
+                d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z">
+              </path>
+            </svg>
+            Chat on WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo-text">FLUXORA<span class="dot">.</span></div>
+          <p class="footer-tagline">
+            Led by engineering students of NIT Rourkela and PMEC Berhampur. Combining strict software principles with
+            elegant visual interactions.
+          </p>
+          <div class="footer-socials">
+            <a href="#" class="footer-social-btn" aria-label="Twitter">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z">
+                </path>
+              </svg>
+            </a>
+            <a href="#" class="footer-social-btn" aria-label="GitHub">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                </path>
+              </svg>
+            </a>
+            <a href="#" class="footer-social-btn" aria-label="LinkedIn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+            <a href="#" class="footer-social-btn" aria-label="Instagram">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Quick Links</div>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Locations</div>
+          <ul class="footer-links">
+            <li><a href="https://maps.app.goo.gl/3G9RTHW2P7fH89VB6">NIT Rourkela Campus,
+                Odisha</a></li>
+            <li><a href="https://maps.app.goo.gl/gHRcsefRniQXSQsx7">PMEC Campus, Berhampur, Odisha</a></li>
+            <li><a href="#">Fluxora Digital</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 Fluxora Digital. All Rights Reserved.</div>
+        <div>Crafted with passion in Odisha, India</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== INTERACTION JAVASCRIPT ===== -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // 0. Render Portfolio Projects Dynamically (Easily manage projects list here)
+      const projects = [
+        {
+          title: "Kalinga sports and fitness",
+          category: "Sports and Fitness",
+          image: "images/your-project-thumbnail.png",
+          tags: ["Fast loading", "SEO Optimized"],
+          link: "https://kalingasportsandfitness.in"
+        },
+        {
+          title: "Acadedge — Interactive Website for Coaching",
+          category: "EdTech Platform",
+          image: "images/your-project-thumbnail.png",
+          tags: ["React", "Node.js", "JavaScript"],
+          link: "https://acadedge.com"
+        },
+        {
+          title: "Odisha-Health-Clinic",
+          category: "Landing Page for Health Clinic",
+          image: "images/your-project-thumbnail.png",
+          tags: ["Health", "Clinic", "Landing pages"],
+          link: "https://odisha-health-clinic.rahulranjan2456.workers.dev"
+        }
+
+      ];
+
+      const workGrid = document.getElementById('workGrid');
+      if (workGrid) {
+        workGrid.innerHTML = projects.map((project, index) => {
+          const isPublic = project.link && (project.link.startsWith('http://') || project.link.startsWith('https://'));
+          const hasPlaceholder = !project.image || project.image === "" || project.image.includes("your-project-thumbnail.png");
+          const imageUrl = (isPublic && hasPlaceholder)
+            ? `https://api.microlink.io/?url=${encodeURIComponent(project.link)}&screenshot=true&embed=screenshot.url`
+            : (project.image || "images/portfolio-business.png");
+
+          return `
+            <div class="work-card fade-up fade-up-delay-${(index % 3) + 1}">
+              <div class="work-card-image-wrapper">
+                <img src="${imageUrl}" alt="${project.title}" class="work-card-image" loading="lazy">
+              </div>
+              <div class="work-card-body">
+                <div class="work-card-category">${project.category}</div>
+                <h3 class="work-card-title">${project.title}</h3>
+                <div class="work-card-tags">
+                  ${project.tags.map(tag => `<span class="work-card-tag">${tag}</span>`).join('')}
+                </div>
+                <a href="${project.link}" class="work-card-link" ${isPublic ? 'target="_blank" rel="noopener" noreferrer' : ''}>
+                  View Project
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </a>
+              </div>
+            </div>
+          `;
+        }).join('');
+      }
+
+      // 1. Mobile Hamburger Menu Toggle
+      const hamburger = document.getElementById('hamburger');
+      const navLinks = document.getElementById('navLinks');
+      const navOverlay = document.getElementById('navOverlay');
+
+      const toggleMenu = () => {
+        hamburger.classList.toggle('active');
+        navLinks.classList.toggle('open');
+        navOverlay.classList.toggle('open');
+        document.body.classList.toggle('overflow-hidden'); // Custom logic if needed
+      };
+
+      hamburger.addEventListener('click', toggleMenu);
+      navOverlay.addEventListener('click', toggleMenu);
+
+      // Close menu on link click (mobile)
+      const menuLinks = document.querySelectorAll('.nav-links a');
+      menuLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          if (navLinks.classList.contains('open')) {
+            toggleMenu();
+          }
+        });
+      });
+
+      // 2. Sticky Navbar & Scroll Spy (Optimized using IntersectionObserver)
+      const navbar = document.getElementById('navbar');
+      const sections = document.querySelectorAll('section');
+      const navItems = document.querySelectorAll('.nav-links a:not(.nav-cta)');
+
+      // Throttled/Stateful sticky navbar behavior to avoid layout engine overload
+      let stickyActive = false;
+      const handleNavbarSticky = () => {
+        const shouldBeSticky = window.scrollY > 50;
+        if (shouldBeSticky !== stickyActive) {
+          stickyActive = shouldBeSticky;
+          if (stickyActive) {
+            navbar.classList.add('scrolled');
+          } else {
+            navbar.classList.remove('scrolled');
+          }
+        }
+      };
+
+      window.addEventListener('scroll', handleNavbarSticky, { passive: true });
+      handleNavbarSticky(); // Run once initially
+
+      // Scroll Spy using IntersectionObserver (highly optimized, avoids layout thrashing)
+      const scrollSpyOptions = {
+        root: null,
+        rootMargin: '-20% 0px -60% 0px', // trigger active section near the top/middle of screen
+        threshold: 0
+      };
+
+      const scrollSpyObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const currentSection = entry.target.getAttribute('id');
+            navItems.forEach(item => {
+              if (item.getAttribute('href') === `#${currentSection}`) {
+                item.classList.add('active');
+              } else {
+                item.classList.remove('active');
+              }
+            });
+          }
+        });
+      }, scrollSpyOptions);
+
+      sections.forEach(section => scrollSpyObserver.observe(section));
+
+      // 3. Scroll Reveal Animations (Fade-up) using IntersectionObserver
+      const fadeUpElements = document.querySelectorAll('.fade-up');
+
+      const revealObserverOptions = {
+        root: null,
+        rootMargin: '0px 0px -50px 0px', // offset triggers slightly for better visual feedback
+        threshold: 0.1
+      };
+
+      const revealObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target); // Stop observing once revealed
+          }
+        });
+      }, revealObserverOptions);
+
+      fadeUpElements.forEach(el => revealObserver.observe(el));
+
+      // 4. Let's Talk Modal Toggles
+      const contactModal = document.getElementById('contactModal');
+      const modalClose = document.getElementById('modalClose');
+      const modalForm = document.getElementById('modalForm');
+
+      const openModal = () => {
+        contactModal.classList.add('open');
+        document.body.style.overflow = 'hidden';
+      };
+
+      const closeModal = () => {
+        contactModal.classList.remove('open');
+        document.body.style.overflow = '';
+      };
+
+      // Trigger navbar CTA
+      const navCta = document.querySelector('.nav-cta');
+      if (navCta) {
+        navCta.addEventListener('click', (e) => {
+          e.preventDefault();
+          openModal();
+        });
+      }
+
+      // Trigger all hero, portfolio & pricing buttons pointing to #contact
+      const modalTriggers = document.querySelectorAll('a[href="#contact"]');
+      modalTriggers.forEach(trigger => {
+        trigger.addEventListener('click', (e) => {
+          e.preventDefault();
+          openModal();
+        });
+      });
+
+      // Close modal events
+      if (modalClose) modalClose.addEventListener('click', closeModal);
+      window.addEventListener('click', (e) => {
+        if (e.target === contactModal) closeModal();
+      });
+
+      // Restrict phone field input to digits only
+      const phoneInput = document.getElementById('modalPhone');
+      if (phoneInput) {
+        phoneInput.addEventListener('input', (e) => {
+          e.target.value = e.target.value.replace(/\D/g, '');
+        });
+      }
+
+      // Form submission feedback & API target forwarding
+      if (modalForm) {
+        modalForm.addEventListener('submit', (e) => {
+          e.preventDefault();
+
+          // 1. Advanced Email Validation (Optional field: only validate if populated)
+          const emailInput = document.getElementById('modalEmail');
+          const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+          if (emailInput && emailInput.value.trim() !== "" && !emailRegex.test(emailInput.value.trim())) {
+            alert('Please enter a valid email address.');
+            emailInput.focus();
+            return;
+          }
+
+          // 2. Phone validation (compulsory & exactly 10 digits)
+          if (phoneInput && phoneInput.value.length !== 10) {
+            alert('Please enter a valid 10-digit mobile number!');
+            phoneInput.focus();
+            return;
+          }
+
+          const submitBtn = modalForm.querySelector('.btn-submit');
+          const originalText = submitBtn.textContent;
+          submitBtn.textContent = 'Sending...';
+          submitBtn.style.opacity = '0.7';
+          submitBtn.disabled = true;
+
+          // Configured Web3Forms Access Key
+          const WEB3FORMS_ACCESS_KEY = "403baf92-27f0-4c3d-897c-5e0ed4b585d4";
+
+          // Prepare payload for Web3Forms API
+          const payload = {
+            access_key: WEB3FORMS_ACCESS_KEY,
+            subject: "New Inquiry from Fluxora Digital Portal",
+            from_name: "Fluxora Digital",
+            Name: document.getElementById('modalName').value,
+            Email: document.getElementById('modalEmail').value || 'Not provided',
+            Phone: '+91 ' + phoneInput.value,
+            'Project Type': document.getElementById('modalProjectType').value,
+            'Project Details': document.getElementById('modalDetails').value || 'Not provided'
+          };
+
+          fetch('https://api.web3forms.com/submit', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+              'Accept': 'application/json'
+            },
+            body: JSON.stringify(payload)
+          })
+            .then(response => {
+              if (response.ok) {
+                submitBtn.textContent = 'Sent Successfully!';
+                submitBtn.style.background = 'var(--accent-green)';
+                submitBtn.style.borderColor = 'var(--accent-green)';
+
+                setTimeout(() => {
+                  closeModal();
+                  modalForm.reset();
+                  submitBtn.textContent = originalText;
+                  submitBtn.style.background = '';
+                  submitBtn.style.borderColor = '';
+                  submitBtn.style.opacity = '';
+                  submitBtn.disabled = false;
+                }, 1800);
+              } else {
+                throw new Error('Form submission failed.');
+              }
+            })
+            .catch(error => {
+              console.error('Error:', error);
+              submitBtn.textContent = 'Error! Try Again';
+              submitBtn.style.background = '#ef4444';
+              submitBtn.style.borderColor = '#ef4444';
+
+              setTimeout(() => {
+                submitBtn.textContent = originalText;
+                submitBtn.style.background = '';
+                submitBtn.style.borderColor = '';
+                submitBtn.style.opacity = '';
+                submitBtn.disabled = false;
+              }, 2500);
+            });
+        });
+      }
+    });
+  </script>
+
+  <!-- ===== LET'S TALK MODAL ===== -->
+  <div class="modal-overlay" id="contactModal">
+    <div class="modal-container">
+      <button class="modal-close" id="modalClose" aria-label="Close modal">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+          stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+
+      <div class="modal-header">
+        <div class="modal-subtitle">LET'S TALK</div>
+        <h2 class="modal-title">Tell us about your project</h2>
+        <p class="modal-desc">Share a few details and we'll get back to you with the right next steps.</p>
+      </div>
+
+      <form class="modal-form" id="modalForm">
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="modalName">Name <span
+                style="color: var(--accent-orange); font-size: 0.75rem;">(Required)</span></label>
+            <input type="text" id="modalName" placeholder="Your full name" required>
+          </div>
+          <div class="form-group">
+            <label for="modalEmail">Email</label>
+            <input type="email" id="modalEmail" placeholder="you@example.com">
+          </div>
+          <div class="form-group">
+            <label for="modalPhone">Phone <span
+                style="color: var(--accent-orange); font-size: 0.75rem;">(Required)</span></label>
+            <div class="phone-input-wrapper">
+              <span class="phone-prefix">+91</span>
+              <input type="tel" id="modalPhone" placeholder="98765 XXX21" pattern="[0-9]{10}" maxlength="10" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="modalProjectType">Project Type</label>
+            <select id="modalProjectType">
+              <option value="Business Website">Business Website</option>
+              <option value="Custom Web App">Custom Web App</option>
+              <option value="E-Commerce Store">E-Commerce Store</option>
+              <option value="Interactive Landing Page">Interactive Landing Page</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group full-width">
+          <label for="modalDetails">Project Details</label>
+          <textarea id="modalDetails" rows="4" placeholder="What are you looking to build?"></textarea>
+        </div>
+
+        <div class="modal-footer">
+          <span class="reply-note">We usually reply within 24 hours.</span>
+          <button type="submit" class="btn btn-primary btn-submit">Send Inquiry</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>
