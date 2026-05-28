@@ -1,0 +1,8 @@
+name = "fluxora"
+main = "index.js"
+compatibility_date = "2024-04-03"
+
+[assets]
+directory = "."
+binding = "ASSETS"
+targets = ["index.html", "index.css", "favicon.svg", "favicon.png", "images/*"]
